@@ -215,5 +215,4 @@ venv/
 .venv/
 logs/
 .DS_Store
-data/*
-!data/.gitkeep
+data/unfiltered-web-dev.json

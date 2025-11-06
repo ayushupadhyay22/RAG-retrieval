@@ -9,7 +9,7 @@ The project also builds a RAG pipeline, to identify if a user answered a questio
 
 - **config/**: Configuration files (YAML)
 - **etl/**: ETL modules (`transform_load.py`)
-- **data/**: Raw JSON file
+- **data/**: Raw JSON file (Sample data for the repo, download the "unfiltered-web-dev.json" from the website)
 - **README.md**: Project documentation
 - **requirements.txt**: Python dependencies
 - **run_ETL.py**: ETL pipeline: loads data, stores in DB, generates embeddings
