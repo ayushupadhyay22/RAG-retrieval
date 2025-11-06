@@ -5,6 +5,13 @@ The project also builds a RAG pipeline, to identify if a user answered a questio
 
 ---
 
+## About the data
+
+[TriviaQA of Joshi et al., (2017)](https://nlp.cs.washington.edu/triviaqa/) is a reading comprehension dataset with over 650,000 question-answer-evidence sets. It includes 95,000 question-answer pairs created by trivia fans, with six evidence documents per question on average. TriviaQA stands out because it has complex questions, varied language between questions and evidence, and requires reasoning across multiple sentences to find answers.
+We have used the **unfiltered-web-dev.json** for this project
+
+---
+
 ## Project Structure
 
 - **config/**: Configuration files (YAML)
