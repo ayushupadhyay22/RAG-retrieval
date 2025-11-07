@@ -8,7 +8,7 @@ import psycopg2
 from psycopg2.extras import execute_values
 import openai
 
-
+#load config data
 def load_config():
     with open('/Users/ayushupadhyay/Documents/GitHub/RAG-RETRIEVAL/config/config.yaml') as f:
         return yaml.safe_load(f)

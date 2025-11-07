@@ -1,10 +1,7 @@
 import openai
 import psycopg2
 import yaml
-
-def load_config():
-    with open('/Users/ayushupadhyay/Documents/GitHub/RAG-RETRIEVAL/config/config.yaml') as f:
-        return yaml.safe_load(f)
+from etl.transform_load import load_config
 
 config = load_config()
 
@@ -36,7 +33,7 @@ response = openai.embeddings.create(
 question_embedding = response.data[0].embedding
 embedding_str = str(question_embedding)
 
-# 4. Similarity search using user's answer embedding, retrieving question and answer columns
+# 4. Similarity search using user's question embedding, retrieving question and answer columns
 cur.execute(
     f"""
     SELECT "Question", "Answer" FROM {TABLE_NAME}
